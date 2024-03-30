@@ -10,7 +10,6 @@ blueColour = "\033[34m"
 resetColour = "\033[0m"
 
 def sig_handler(sig, frame):
-    os.system("clear")
     sys.exit(1)
 
 signal.signal(signal.SIGINT, sig_handler)
