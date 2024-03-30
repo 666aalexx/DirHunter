@@ -30,7 +30,7 @@ def start():
             wordlist = open(wordlist, "r")
             wordlist = wordlist.read().split("\n")
         else:
-            print(f"{redColour}The dictionary does not exist{endColour}")
+            print(f"{redColour}The dictionary does not exist{resetColour}")
             sys.exit(1)
         with open("directoriesFound.txt", "a") as output:
             for directories in wordlist:
